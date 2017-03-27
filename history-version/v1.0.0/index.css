@@ -1,0 +1,94 @@
+/* reset css */
+div,h3,p,span {
+    margin: 0;
+    padding: 0;
+}
+.clearfix:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+/* real css */
+.player {
+    width: 350px;
+    padding: 20px 15px;
+    border: 1px solid lightgreen;
+    background-color: white;
+    color: red;
+}
+.ct {
+    position: relative;
+}
+
+.sound {
+    float: left;
+    margin-top: 25px;
+    margin-left: 10px;
+    display: inline-block;
+    width: 100px;
+    vertical-align: middle;
+}
+.sound-bg {
+    display: inline-block;
+    width: 50px;
+    height: 4px;
+    background-color: #666;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.sound-bar {
+    width: 25px;
+    height: 4px;
+    background-color: red;
+}
+
+.control {
+    float: right;
+    margin-top: 25px;
+    margin-right: 5px;
+    width: 100px;
+}
+.control>span {
+    cursor: pointer;
+}
+.iconfont {
+    font-size: 20px;
+}
+
+.info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -23px;
+    margin-left: -40px;
+    float: left;
+    text-align: center;
+}
+.song {
+    font-size: 25px;
+}
+.singer {
+    font-size: 15px;
+}
+
+.process {
+    margin-top: 5px;
+}
+.bar,.time {
+    display: inline-block;
+}
+.bar {
+    width: 300px;
+    height: 4px;
+    background-color: #969896;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.bar-now{
+    width: 0;
+    height: 4px;
+    background-color: red;
+}
+.time {
+    vertical-align: middle;
+}
