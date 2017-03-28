@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="never">
+    <title>音乐播放器</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+</head>
+<body>
+    <div class="music-box">
+        <div class="header clearfix">
+            <span class="channels iconfont icon-list"></span>
+            <p>默认频道</p>
+            <div class="channels-list">
+                <ul></ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="infor">
+                <p class="title">歌曲</p>
+                <p class="author">作者</p>
+            </div>
+            <div class="control clearfix">
+                <div class="volume">
+                    <span class="horn iconfont icon-volume"></span>
+                    <div class="volume-bar">
+                        <div class="volume-bar-now"></div>
+                    </div>
+                </div>
+                <div class="btn">
+                    <span class="last iconfont icon-last"></span>
+                    <span class="status">
+                        <span class="play iconfont icon-play active"></span>
+                        <span class="pause iconfont icon-pause"></span>
+                    </span>
+                    <span class="next iconfont icon-next"></span>
+                </div>
+            </div>
+            <div class="process">
+                <span class="time-now">00:00</span>
+                <div class="process-bar">
+                    <div class="process-bar-now"></div>
+                </div>
+                <span class="time-total">59:59</span>
+            </div>
+        </div>
+        <div class="lyric">
+            <ul></ul>
+        </div>
+    </div>
+
+    <script src="jquery-1.9.1.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
