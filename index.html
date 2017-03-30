@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="never">
+    <title>音乐播放器</title>
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/infor.css">
+    <link rel="stylesheet" href="./css/process.css">
+    <link rel="stylesheet" href="./css/control.css">
+    <link rel="stylesheet" href="./css/channel.css">
+</head>
+<body>
+    <div class="music-box">
+        <div class="shortcut">
+            <span class="iconfont icon-shortcut"></span>
+        </div>
+        <div class="player">
+            <div class="background"></div>
+            <div class="infor">
+                <ul class="clearfix">
+                    <li class="infor-basic">
+                        <div class="infor-pic">
+                            <img src="./images/jay.jpg">
+                        </div>
+                        <div class="infor-text">
+                            <p class="title">歌曲名称</p>
+                            <p class="author">歌手名称</p>
+                            <p class="channel-cur">频道：随便听听</p>
+                        </div>
+                    </li>
+                    <li class="infor-lyric">
+                        <p class="title">歌曲名称</p>
+                        <div class="lyric-list">
+                            <ul></ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="process">
+                <div class="wrap">
+                    <div class="time-now">00:00</div>
+                    <div class="process-bar">
+                        <div class="process-bar-now"></div>
+                    </div>
+                    <div class="time-total">00:00</div>
+                </div>
+            </div>
+            <div class="control clearfix">
+                <div class="control-play">
+                    <span class="status iconfont icon-pause"></span>
+                    <span class="next iconfont icon-next"></span>
+                </div>
+                <div class="control-music">
+                    <span class="random iconfont icon-random active"></span>
+                    <span class="loop iconfont icon-loop"></span>
+                    <span class="more iconfont icon-more"></span>
+                    <span class="lyric iconfont icon-lyric"></span>
+                </div>
+            </div>
+            <div class="extra">
+                <span class="horn iconfont icon-horn"></span>
+                <div class="volume-bar">
+                    <div class="volume-bar-now"></div>
+                </div>
+                <span class="channel iconfont icon-list"></span>
+            </div>
+            <div class="channel-list">
+                <ul></ul>
+            </div>
+            <div class="music-icon">
+                <span class="fenxiang iconfont icon-fenxiang"></span>
+                <span class="heart iconfont icon-heart"></span>
+                <span class="shrink iconfont icon-shrink"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/jquery-1.9.1.min.js"></script>
+    <script src="./js/getInfor.js"></script>
+    <script src="./js/setBar.js"></script>
+    <script src="./js/getChannel.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+        firstEnter();
+    </script>
+</body>
+</html>

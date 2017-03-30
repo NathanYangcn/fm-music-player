@@ -1,0 +1,54 @@
+/* FM 外壳 */
+.music-box {
+    margin: 50px auto 0;
+    width: 470px;
+}
+/* FN 快捷方式 */
+.shortcut {
+    position: relative;
+    display: none;
+}
+.shortcut>span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid red;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: red;
+    cursor: pointer;
+}
+.shortcut>.icon-shortcut {
+    font-size: 35px;
+}
+/* FM 容器及背景 */
+.player {
+    box-shadow: 0 0 2px 2px #ccc;
+    position: relative;
+    border-radius: 10px;
+    width: 470px;
+    height: 310px;
+}
+.background {
+    background: url(../images/jay.jpg) no-repeat center;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+    height: 240px;
+}
+/* FM 字体图标 */
+.music-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 0;
+}
+.music-icon>span {
+    margin-left: 15px;
+    cursor: pointer;
+}
+.music-icon>.heart.active {
+    color: red;
+}
