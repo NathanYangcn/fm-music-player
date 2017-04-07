@@ -1,0 +1,17 @@
+/* 清除默认样式——部分标签 */
+body,div,ul,li,p,img,span {
+    margin: 0;
+    padding: 0;
+}
+ul,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/* 清除浮动工具 */
+.clearfix:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
