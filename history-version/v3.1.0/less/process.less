@@ -1,0 +1,36 @@
+.process {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 470px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.95);
+
+  &>.wrap {
+    margin: 0 auto;
+    width: 440px;
+    font-size: 0;
+
+    &>div {
+      display: inline-block;
+      font-size: 16px;
+      text-align: center;
+      line-height: 40px;
+    }
+    &>.process-bar {
+      margin: 0 10px;
+      border-radius: 10px;
+      width: 340px;
+      height: 10px;
+      background-color: #4d4d4d;
+      cursor: pointer;
+
+      &>.process-bar-now {
+        border-radius: 10px;
+        width: 0;
+        height: 10px;
+        background-color: #9a9a9a;
+      }
+    }
+  }
+}
