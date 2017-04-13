@@ -1,9 +1,9 @@
 # 这是什么？
 ### 这是一个FM随机音乐播放器
-- 预览如下：预览效果一致，可能存在加载速度问题，还可能需要你多刷新几次
-- [预览1：版本v3.2.0](http://htmlpreview.github.io/?https://github.com/NathanYangcn/fm-music-player/blob/master/index.html)
-- [预览2：版本v2.2.0](http://htmlpreview.github.io/?https://github.com/NathanYangcn/fm-music-player/blob/master/history-version/v2.0.0/index.html)
-- [历史版本进化过程预览](https://github.com/NathanYangcn/fm-music-player/tree/master/history-version)，找到下方README.md进行查看
+- 预览如下：预览效果一致，可能存在加载速度问题，还可能需要多刷新几次
+	1. [预览1：版本v3.2.0](http://htmlpreview.github.io/?https://github.com/NathanYangcn/fm-music-player/blob/master/index.html)
+	2. [预览2：版本v2.2.0](http://htmlpreview.github.io/?https://github.com/NathanYangcn/fm-music-player/blob/master/history-version/v2.0.0/index.html)
+	3. [历史版本进化过程预览](https://github.com/NathanYangcn/fm-music-player/tree/master/history-version)
 
 # 实现了哪些功能？
 1. 播放
@@ -46,7 +46,7 @@
 #### 2. 实现歌词滚动展示思路：
 - 首先：和后台数据交互拿到歌词资源
 - 其次：初始化资源，将歌词按格式 ‘["歌词时间","歌词内容"]’ 提取出来
-	1. 特定资源特定分析，这只是处理我拿到的歌词办法
+	1. 特定资源特定分析，这只是处理我拿到的歌词办法，思路基本一致
 	2. 把每一句歌词全部分割开来
 	3. 遍历分割开的歌词，分别拿到其中的‘歌词时间’以及‘歌词内容’
 	4. 将‘歌词时间’转换为总秒数
