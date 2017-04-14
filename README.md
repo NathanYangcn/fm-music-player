@@ -1,6 +1,7 @@
 # 这是什么？
 ### 这是一个FM随机音乐播放器
-- 预览如下：预览效果一致，可能存在加载速度和git pages解析速度的问题：首先无样式内容展示，其次重新渲染排版布局，最后加载完成自动播放
+- 预览如下：预览效果一致，可能存在加载速度和git pages解析速度的问题
+- 当前预览显示流程：首先无样式内容展示，其次重新渲染排版布局，最后加载完成自动播放
 	1. [预览1：版本v3.2.0](http://htmlpreview.github.io/?https://github.com/NathanYangcn/fm-music-player/blob/master/index.html)
 	2. [预览2：版本v2.2.0](http://htmlpreview.github.io/?https://github.com/NathanYangcn/fm-music-player/blob/master/history-version/v2.0.0/index.html)
 	3. [历史版本进化过程预览](https://github.com/NathanYangcn/fm-music-player/tree/master/history-version)
@@ -59,7 +60,7 @@
 #### 1. 循环播放的问题
 - 属性 loop 只是单曲循环播放，如果需要切换音频，需要监听 ended 事件，触发该事件时重新设置音频资源即可
 - 属性 autoplay 是设置自动播放状态的，当进入或者切换音频资源时自动播放
-#### 2. [我的文章总结：跨域获取资源](http://www.jianshu.com/p/0446b5bcdbab)
+#### 2. [我的文章总结：跨域获取资源](http://www.jianshu.com/p/0446b5bcdbab)：
 	- 使用语法不同(原生JS?jQuery?)，写法也不同，但原理一致
 	- 跨域可选择的方法也不少，看看后台支持哪个，哪个更合适一些
 	- jsonp和cors比较大众，但cors存在兼容问题，关于具体如何实现，我可是写了文章的哦
@@ -78,7 +79,7 @@
 - 这是一个熟练问题，需要适应这个写法，多写就会熟悉，刚开始我也有无从入手的感觉，那就在练习中照猫画虎找找套路
 - 套路：使用原型或立即执行函数都可以，按照写法格式改写即可，最后注意修改内部this的指代，这其实就是在封装代码
 - 既然面向过程时可以写出代码，那么在封装代码时就会更容易，因为这就是按照格式改写代码而已（自认为）
-#### 5. less
+#### 5. less编译问题
 - less允许使用嵌套语法，这样就缩短了书写css选择器的长度；
 - 问题：less编译后，页面元素排版错乱
 - 排查：less是需要编译的，编译后的文件中全部都是后代元素，没有直接子元素，所以问题在于less文件选择器书写错误
