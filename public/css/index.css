@@ -152,7 +152,7 @@ a {
 .process > .wrap > .process-bar {
   margin: 0 10px;
   border-radius: 10px;
-  width: 340px;
+  width: 320px;
   height: 10px;
   background-color: #4d4d4d;
   cursor: pointer;
@@ -162,6 +162,12 @@ a {
   width: 0;
   height: 10px;
   background-color: #9a9a9a;
+}
+.process > .wrap > .time-now {
+  width: 50px;
+}
+.process > .wrap > .time-total {
+  width: 50px;
 }
 .control {
   /* 常规控制台 */
