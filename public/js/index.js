@@ -6,9 +6,9 @@
 /******/ 	function __webpack_require__(moduleId) {
 /******/
 /******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId])
+/******/ 		if(installedModules[moduleId]) {
 /******/ 			return installedModules[moduleId].exports;
-/******/
+/******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = installedModules[moduleId] = {
 /******/ 			i: moduleId,
@@ -119,10 +119,16 @@ var MusicInfor = (function () {
                 channel: StorageChannel.storageChannel
             }
         }).done(function (ret) {
+        	// console.log(ret);
+        	if (ret.song[0].url === null) {
+        		getMusic();
+        		// console.log('null')
+        		return
+        	}
             getMusicInfor(ret);
             getLyric();
             audioObject.play();
-        }).fail(function () {
+        }).fail(function (error) {
             $musicTitle.text('系统异常！请稍后再试。')
         });
         setTimeout(function(){

@@ -35,10 +35,16 @@ var MusicInfor = (function () {
                 channel: StorageChannel.storageChannel
             }
         }).done(function (ret) {
+        	// console.log(ret);
+        	if (ret.song[0].url === null) {
+        		getMusic();
+        		// console.log('null')
+        		return
+        	}
             getMusicInfor(ret);
             getLyric();
             audioObject.play();
-        }).fail(function () {
+        }).fail(function (error) {
             $musicTitle.text('系统异常！请稍后再试。')
         });
         setTimeout(function(){
